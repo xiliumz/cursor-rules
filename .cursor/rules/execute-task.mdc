@@ -1,0 +1,18 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+To execute tasks:
+1. Open `tasks.md` and find the first task (by number) with status "To Do".
+2. Check if a subtask file exists in `./tasks/` named `TASK[Number].md`.
+   - If yes, open the subtask file and execute each subtask in order:
+     a. Perform the actions required for the subtask.
+     b. Mark each checklist item as done in the subtask file.
+     c. Once all subtasks are completed, update the main task's status to "Completed" in `tasks.md`.
+   - If no subtask file exists, execute the main task directly:
+     a. Perform the actions required for the main task.
+     b. Mark the main task's checklist items as done.
+     c. Update the main task's status to "Completed" in `tasks.md`.
+
+Note: When executing tasks, refer to the PRD and other project files for context and implementation details.

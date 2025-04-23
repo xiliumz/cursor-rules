@@ -1,0 +1,22 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+To build a PRD based on user instructions:
+
+1. Read the `prd-template.md` to understand the required structure, including sections: Product Overview, Objectives, Features (with Dependencies), User Stories, and Non-Functional Requirements.
+2. Start with the user's initial instructions for the PRD.
+3. For each section in `prd-template.md`:
+   - Check if the user's instructions provide sufficient details to fill the section.
+   - If details are missing or unclear, prompt the user with a specific question to gather the required information. Examples:
+     - For Product Overview: "What is the purpose and key functionality of this product?"
+     - For Objectives: "What are the primary goals this product aims to achieve?"
+     - For Features: "What specific features should the product include? For each feature, are there any dependencies on other features?"
+     - For User Stories: "Can you provide user stories in the format: As a \[user\], I want \[feature\] so that \[benefit\]?"
+     - For Non-Functional Requirements: "Are there any performance, security, or scalability requirements?"
+4. Continue prompting the user for each section until all required information is provided and no placeholders remain.
+5. Once all details are collected, generate the PRD in `standard-prd.md` following the exact structure of `prd-template.md`, filling in the user-provided information.
+6. Save the generated PRD in the project root directory as `standard-prd.md`.
+
+Note: If the user provides partial information, store it temporarily and ask only for the missing pieces in subsequent prompts to avoid redundancy.

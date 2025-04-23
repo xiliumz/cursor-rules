@@ -1,0 +1,25 @@
+---
+description:
+globs:
+alwaysApply: false
+---
+
+To analyze a task for subtasks:
+
+1. Locate the main task in `tasks.md` by its number or name.
+2. Read the task description and refer to the original PRD and `standard-prd.md` for context.
+3. Determine if the task is complex enough to require subtasks. Consider factors like:
+   - Number of features or components involved.
+   - Dependencies on other tasks or systems.
+   - Estimated time or effort required.
+4. If subtasks are needed, generate a list of 3-5 smaller tasks that collectively achieve the main task.
+5. Save these subtasks in a new file named `TASK[Number].md` in the `./tasks/` directory, where `[Number]` is the main task's number.
+6. Each subtask should have a format similar to the main tasks, including a description, status, priority, and a placeholder checklist.
+
+Example subtask format:
+
+## Subtask 1: \[Subtask Name\]
+
+Description: \[Subtask Description\] Status: To Do Priority: Medium Checklist:
+
+- \[ \] (To be determined)

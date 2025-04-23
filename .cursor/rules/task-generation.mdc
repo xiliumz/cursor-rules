@@ -1,0 +1,26 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+To generate tasks from a standard PRD:
+
+1. Locate the "Features" section in the PRD.
+2. Extract the list of features, each with their name, description, and dependencies.
+3. Assign a unique task number to each feature, starting from 1, in the order they appear.
+4. Create a mapping from feature names to task numbers.
+5. For each feature, create a task with:
+   - Task number
+   - Feature name
+   - Description
+   - Status: To Do
+   - Priority: Medium
+   - Dependencies: List of task numbers corresponding to the dependent features (using the mapping), or "None" if no dependencies
+   - Checklist: Placeholder item
+6. Output the tasks in `tasks.md` with the format:
+
+## Task \[Number\]: \[Feature Name\]
+
+Description: \[Feature Description\] Status: To Do Priority: Medium Dependencies: \[List of task numbers or "None"\] Checklist:
+
+- \[ \] (To be determined)

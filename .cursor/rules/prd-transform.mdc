@@ -1,0 +1,13 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+To transform a PRD into the standard format:
+1. Identify the product name and version from the input PRD.
+2. Extract the product overview, typically found in the introduction or summary section.
+3. Extract the objectives or goals of the product.
+4. Identify the key features, often listed in a "Features" or "Functionality" section.
+5. Look for user stories, if present, usually in a "User Stories" or "Use Cases" section.
+6. Extract any non-functional requirements, such as performance or security needs.
+7. Use the extracted information to fill in the standard PRD template located at `prd-template.md`.
