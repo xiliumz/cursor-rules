@@ -23,6 +23,11 @@ Before starting task execution, determine how many tasks you can effectively han
    - Quality should never be sacrificed for quantity
    - Build in buffer time for unexpected complications
 
+4. **Determine the number of tasks you can handle**
+   - If you are unsure, start with 1 task
+   - If you are confident, start with 3 tasks
+   - If you are feeling ambitious, start with 5 tasks
+
 ## Introduction
 
 This guide explains how to effectively execute tasks and maintain accurate status updates throughout the development process. Clear task execution and consistent status tracking are essential for project visibility and team coordination.
