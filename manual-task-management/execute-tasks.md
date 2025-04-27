@@ -4,6 +4,10 @@
 
 # Task Execution and Status Updates
 
+## Introduction
+
+This guide explains how to effectively execute tasks and maintain accurate status updates throughout the development process. Clear task execution and consistent status tracking are essential for project visibility and team coordination.
+
 ## Determining Your Task Capacity
 
 Before starting task execution, determine how many tasks you can effectively handle in one session:
@@ -24,13 +28,7 @@ Before starting task execution, determine how many tasks you can effectively han
    - Build in buffer time for unexpected complications
 
 4. **Determine the number of tasks you can handle**
-   - If you are unsure, start with 1 task
-   - If you are confident, start with 3 tasks
-   - If you are feeling ambitious, start with 5 tasks
-
-## Introduction
-
-This guide explains how to effectively execute tasks and maintain accurate status updates throughout the development process. Clear task execution and consistent status tracking are essential for project visibility and team coordination.
+   - If you think you can handle more than 3 tasks, take it. I prefer you can take a lot of tasks at once.
 
 ## Task Execution Workflow
 
