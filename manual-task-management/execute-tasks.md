@@ -88,8 +88,14 @@ When finishing a task:
    ```
 
 3. **Update context documents**
-   - Revise context files with new implementation details
+   - Revise context files with new implementation details (See [Create Context Guide](generate-context.mdc) for guidelines)
    - Document any changes to the original plan
+
+4. **Handle Completed Task Files**
+   - Check if *all* tasks and subtasks within the specific task file (e.g., `auth.md` in the examples) are marked as `[x] Completed`.
+   - If the entire file represents a completed unit of work:
+     - **Identify or Create Context:** Determine if a relevant context document already exists (e.g., in a `./context` directory). If one exists, update it to reflect the completed work's final state or outcomes. If no relevant context document exists, create a new one summarizing the task and its results. Refer to [Create Context Guide](generate-context.mdc) for guidance on structuring context documents.
+     - **Delete Task File:** After ensuring the context is captured (either by updating an existing document or creating a new one), delete the completed task file from the `./tasks` directory to keep the task list focused on active work.
 
 ## Status Tracking System
 
