@@ -1,0 +1,210 @@
+# Including Context in Task Management
+
+## Introduction
+
+Effective task management requires not just listing what needs to be done, but also providing the necessary context for each task. This guide explains how to reference and maintain context documents within your task lists.
+
+## Why Context Matters
+
+Context documents serve several crucial purposes:
+- Preserve current implementation details
+- Explain design decisions and requirements
+- Provide necessary background for task execution
+- Ensure consistency across components
+- Help new team members understand the project structure
+
+## Context Document Structure
+
+### 1. Creating Context Documents
+
+For each major component or feature, create a dedicated context document:
+
+```
+project/
+├── tasks/
+├── ├── auth.md
+└── context/
+    ├── auth.md
+    ├── database.md
+    ├── api-standards.md
+    └── ui-components.md
+```
+
+### 2. Naming Conventions
+
+Use clear, consistent naming:
+- Use kebab-case for filenames
+- Name documents after features or components
+- Be specific but concise
+
+Examples:
+- `auth.md` - Authentication system
+- `database-schema.md` - Database structure
+- `api-endpoints.md` - API documentation
+
+## Content of Context Documents
+
+Each context document should include:
+
+### 1. Overview
+
+Brief description of the component and its purpose.
+
+```markdown
+# Authentication System
+
+This document describes the current authentication implementation, including user models, 
+authentication flows, and security measures.
+```
+
+### 2. Current Implementation
+
+Describe the existing code, architecture, or design:
+
+```markdown
+## Current Implementation
+
+The authentication system uses JWT tokens with a 24-hour expiration. 
+User credentials are stored in the database with bcrypt hashing.
+
+Key components:
+- AuthController - Handles login/logout requests
+- JwtService - Generates and validates tokens
+- UserRepository - Database access for user data
+```
+
+### 3. Important Considerations
+
+Document constraints, requirements, or gotchas:
+
+```markdown
+## Important Considerations
+
+- Token expiration is set to 24 hours for security
+- Failed login attempts are limited to 5 per hour
+- Password requirements: 8+ chars, must include number and symbol
+```
+<!-- 
+### 4. Related Resources
+
+Links to additional documentation or code:
+
+```markdown
+## Related Resources
+
+- @Security Requirements
+- @API Standards
+- @User Database Schema
+``` -->
+
+## Referencing Context in Tasks
+
+### Task List Format
+
+Reference context documents directly in task lists:
+
+```markdown
+1. Authentication System
+  - auth.md
+  - [ ] Implement login API endpoint
+    - [ ] Validate user credentials
+    - [ ] Generate JWT token
+    - [ ] Return appropriate response
+  - [ ] Add password reset functionality
+    - [ ] Create reset token mechanism
+    - [ ] Implement email notification
+```
+
+### Multi-level Context
+
+For complex tasks, reference multiple context documents:
+
+```markdown
+1. User Management
+- auth.md
+- user-permissions.md
+  - [ ] Implement role-based access control
+    - [ ] Define role hierarchy
+    - [ ] Add permission checks to API endpoints
+```
+
+## Practical Examples
+
+### Example 1: Backend API Task
+
+```markdown
+## User API Endpoints
+- api-standards.md
+- auth.md
+  - [ ] Create user registration endpoint
+    - [ ] Implement input validation
+    - [ ] Check for existing users
+    - [ ] Hash passwords securely
+    - [ ] Store user data
+```
+
+### Example 2: Database Task
+
+```markdown
+## Database Implementation
+- database-schema.md
+- data-migration.md
+  - [ ] Update user table structure
+    - [ ] Add email verification fields
+    - [ ] Create migration script
+    - [ ] Add rollback procedure
+```
+
+### Example 3: Frontend Task
+
+```markdown
+## Authentication UI
+- ui-components.md
+- auth.md
+- design-system.md
+  - [ ] Implement login form
+    - [ ] Create form components
+    - [ ] Add validation
+    - [ ] Handle API integration
+```
+
+## Maintaining Context Documents
+
+### When to Update
+
+Update context documents when:
+- Implementing significant changes
+- Making architectural decisions
+- Discovering important information
+- Noticing outdated information
+
+### Update Process
+
+1. Update the context document first
+2. Reference the updated document in related tasks
+
+## Best Practices
+
+1. **Keep context documents concise** - Focus on what's necessary to understand the task
+2. **Update regularly** - Outdated context can be worse than no context
+3. **Link rather than duplicate** - Reference other documents instead of copying information
+4. **Use consistent formatting** - Make documents predictable and easy to scan
+5. **Include examples** - Show how components work together
+
+## Context-First Task Workflow
+
+1. **Identify knowledge needs** - What context is needed for this task?
+2. **Create/update context documents** - Ensure documentation is current
+3. **Create tasks with references** - Link to relevant context
+4. **Execute tasks** - Use context documents during implementation
+5. **Update context after completion** - Document new implementation details
+
+## Conclusion
+
+By linking tasks to context documents, you create a more effective development workflow. This approach:
+- Provides the necessary background for tasks
+- Reduces the need for explanations in task descriptions
+- Creates a natural documentation system
+- Ensures all team members have access to the same information
+
+Remember: Good context makes tasks faster to understand and more accurately implemented.
