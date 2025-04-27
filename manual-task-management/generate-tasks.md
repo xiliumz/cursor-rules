@@ -2,6 +2,7 @@
 - Don't generate any code yet in this step
 - Follow the instructions below to understand how to generate tasks
 - Generate tasks in `./tasks/[task-name].md` file
+- Always use sequential thinking
 
 # Introduction
 

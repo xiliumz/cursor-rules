@@ -4,6 +4,25 @@
 
 # Task Execution and Status Updates
 
+## Determining Your Task Capacity
+
+Before starting task execution, determine how many tasks you can effectively handle in one session:
+
+1. **Assess task complexity**
+   - Complex tasks require more focused attention
+   - Simple tasks can be batched more easily
+   - Be honest about the cognitive load of each task
+
+2. **Consider your energy levels**
+   - Schedule demanding tasks during your peak productivity hours
+   - Save simpler tasks for when energy is lower
+   - Account for potential context-switching costs
+
+3. **Set realistic limits**
+   - It's better to complete 2-3 tasks well than to attempt 5-6 with poor results
+   - Quality should never be sacrificed for quantity
+   - Build in buffer time for unexpected complications
+
 ## Introduction
 
 This guide explains how to effectively execute tasks and maintain accurate status updates throughout the development process. Clear task execution and consistent status tracking are essential for project visibility and team coordination.
