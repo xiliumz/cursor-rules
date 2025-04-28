@@ -1,3 +1,8 @@
+---
+description: This guide about how to create task context documents
+globs: 
+alwaysApply: false
+---
 # Including Context in Task Management
 
 ## Introduction
