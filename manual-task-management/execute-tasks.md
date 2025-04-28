@@ -28,7 +28,7 @@ Before starting task execution, determine how many tasks you can effectively han
    - Build in buffer time for unexpected complications
 
 4. **Determine the number of tasks you can handle**
-   - If you think you can handle more than 3 tasks, take it. I prefer you can take a lot of tasks at once.
+   - If you estimate you can handle more than 3 tasks, proceed with that larger number. My preference is for you to handle as many tasks simultaneously as possible.
 
 ## Task Execution Workflow
 
