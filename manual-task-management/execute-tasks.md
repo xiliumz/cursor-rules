@@ -1,3 +1,8 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
 - Locate the `./tasks` directory and list all available task definition files.
 - Identify the task the user wants to execute. If the user doesn't specify, select the first task file alphabetically.
 - Perform the actions described in this document.
