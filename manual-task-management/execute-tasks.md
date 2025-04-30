@@ -33,7 +33,10 @@ Before starting task execution, determine how many tasks you can effectively han
    - Build in buffer time for unexpected complications
 
 4. **Determine the number of tasks you can handle**
-   - If you estimate you can handle more than 3 tasks, proceed with that larger number. My preference is for you to handle as many tasks simultaneously as possible.
+   - Assess the task workload
+   - Factor in potential interruptions
+   - Start with fewer tasks than you think possible to ensure quality
+   - Only execute one task at a time unless specifically requested to complete multiple tasks
 
 ## Task Execution Workflow
 
@@ -104,6 +107,43 @@ When finishing a task:
    - If the entire file represents a completed unit of work:
      - **Identify or Create Context:** Determine if a relevant context document already exists (e.g., in a `./context` directory). If one exists, update it to reflect the completed work's final state or outcomes. If no relevant context document exists, create a new one summarizing the task and its results. Refer to [Create Context Guide](generate-context.mdc) for guidance on structuring context documents.
      - **Delete Task File:** After ensuring the context is captured (either by updating an existing document or creating a new one), delete the completed task file from the `./tasks` directory to keep the task list focused on active work.
+
+### 4. Validation Phase
+
+After marking a main task as complete (all subtasks are marked as completed), perform a thorough validation to ensure proper implementation:
+
+1. **When to validate**
+   - Validation occurs only once, after the entire main task is finished
+   - All subtasks must be completed before beginning validation
+
+2. **Comprehensive task validation**
+   - Validate the main task and each individual subtask
+   - Verify the complete feature or component works as intended
+   - Ensure the implementation satisfies all requirements in the task description
+
+3. **Integration validation**
+   - Verify the task works correctly with other components
+   - Test edge cases and error conditions
+   - Validate performance meets requirements
+
+4. **Documentation review**
+   - Confirm all implementation details are documented
+   - Verify technical documentation is accurate and complete
+   - Update any diagrams or architecture documents as needed
+
+5. **Validation status update**
+   ```markdown
+   - [x] Create login API endpoint (Validated - Passed all test cases)
+   ```
+
+6. **Address validation failures**
+   - If validation uncovers issues:
+     - Revert task status to in-progress: `[>]`
+     - Document specific issues found
+     - Create new subtasks for addressing issues
+   ```markdown
+   - [>] Implement payment gateway (Validation failed - Need to fix error handling)
+   ```
 
 ## Status Tracking System
 
