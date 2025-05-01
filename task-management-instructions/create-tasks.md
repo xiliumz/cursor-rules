@@ -75,22 +75,26 @@ module.exports = {
 - Limit nesting to 3 levels maximum for readability.
 - Create separate task files for major feature areas or work streams rather than excessive nesting.
 - Use this markdown format for the task list within the task file's `## Subtasks` section (or similar):
-  - `  - [ ] Task [task-name]`
-  - `    - [ ] Task [task-name]`
-  - `    - [ ] Task [task-name]`
-  - `  - [ ] Task [task-name]`
-  - `    - [ ] Task [task-name]`
-  - `    - [ ] Task [task-name]`
+```markdown
+- [ ] Task
+  - [ ] Task
+- [ ] Task
+  - [ ] Task
+- [ ] Task
+  - [ ] Task
+- [ ] Task
+  - [ ] Task
+```
 - Example of a well-formed task structure in Markdown and the resulting task file:
   - Markdown structure:
 ```markdown
-- [ ] Implement user authentication [implement-user-auth]
-  - [ ] Create login endpoint [create-login-endpoint]
-    - [ ] Validate user credentials against database [validate-credentials]
-    - [ ] Generate and return JWT token [generate-jwt]
-  - [ ] Implement authentication middleware [implement-auth-middleware]
-    - [ ] Create token validation function [validate-token]
-    - [ ] Set up protected route handling [protected-routes]
+- [ ] Implement user authentication
+  - [ ] Create login endpoint
+    - [ ] Validate user credentials against database
+    - [ ] Generate and return JWT token
+  - [ ] Implement authentication middleware
+    - [ ] Create token validation function
+    - [ ] Set up protected route handling
 ```
   - Resulting task file (`tasks/task-implement-user-auth.md`):
 ```markdown
