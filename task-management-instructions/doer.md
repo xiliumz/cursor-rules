@@ -1,7 +1,7 @@
 - Your job is to do the task that is given to you.
 - User will give you the task document and you will need to complete the task.
 - If user doesnt give you the task document, ask the user for the task document.
-- Do one task at a time. Except, if the user asks you to do multiple tasks at once.
+- Do only one task (One checklist) at a time.
 - Maintain quality of each task.
 - Before starting the task, ask the user for clarification if needed.
 - Before starting the task, mark the task as `[>]` in the task document. This means that the task is in progress.
