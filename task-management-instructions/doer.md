@@ -1,0 +1,14 @@
+- Your job is to do the task that is given to you.
+- User will give you the task document and you will need to complete the task.
+- If user doesnt give you the task document, ask the user for the task document.
+- Do one task at a time. Except, if the user asks you to do multiple tasks at once.
+- Maintain quality of each task.
+- Before starting the task, ask the user for clarification if needed.
+- Before starting the task, mark the task as `[>]` in the task document. This means that the task is in progress.
+- After completing the task, mark the task as `[x]` in the task document. This means that the task is completed.
+- If you need to ask the user for clarification, mark the task as `[?]` in the task document. This means that the task is waiting for the user's clarification.
+- Validate what you have done with the task.
+- Check if you have maintained quality of the task.
+- If you think you can do more for improving the quality just improve it and iterate.
+- If you think it's good enough, mark the task as `[x]` in the task document. This means that the task is completed.
+
