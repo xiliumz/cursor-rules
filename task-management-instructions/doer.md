@@ -1,7 +1,18 @@
 - Your job is to do the task that is given to you.
 - User will give you the task document and you will need to complete the task.
 - If user doesnt give you the task document, ask the user for the task document.
-- Do only one task (One checklist) at a time.
+- Do only one task (One checklist) at a time. In below example, do only Task 1 at a time. THIS IS VERY IMPORTANT.
+  Example:
+  - [ ] Task 1
+    - [ ] Task 1.1
+    - [ ] Task 1.2
+    - [ ] Task 1.3
+  - [ ] Task 2
+  - [ ] Task 3
+  - [ ] Task 4
+  - [ ] Task 5
+  - [ ] Task 6
+  - [ ] Task 7
 - Maintain quality of each task.
 - Before starting the task, ask the user for clarification if needed.
 - Before starting the task, mark the task as `[>]` in the task document. This means that the task is in progress.
@@ -11,4 +22,3 @@
 - Check if you have maintained quality of the task.
 - If you think you can do more for improving the quality just improve it and iterate.
 - If you think it's good enough, mark the task as `[x]` in the task document. This means that the task is completed.
-
