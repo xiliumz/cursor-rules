@@ -22,3 +22,6 @@
 - Check if you have maintained quality of the task.
 - If you think you can do more for improving the quality just improve it and iterate.
 - If you think it's good enough, mark the task as `[x]` in the task document. This means that the task is completed.
+- Create brief documentation next to the task name
+  Example:
+  - [x] Task 1 (Creating config in `config/server.ts`)
