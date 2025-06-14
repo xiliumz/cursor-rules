@@ -50,11 +50,11 @@
     - [ ] Detailed step
 - [ ] Main task
   - [ ] Subtask
+```
 
 ## Example
 
-``markdown
-
+```markdown
 # Task: Create MetricSummaryCard component
 
 ## Description
@@ -74,28 +74,28 @@ Implement a reusable soil data summary card component to display a soil metric l
 
 ## Tasks
 
-- [ ] Create `metric-summary-card.tsx` in `src/modules/farm-performance/components/soil-data/` (Created `metric-summary-card.tsx` component with LetterSymbol and ValueIndicator sub-components)
+- [ ] Create `metric-summary-card.tsx` in `src/modules/farm-performance/components/soil-data/`
   - [ ] Define `MetricSummaryCardProps`:
-    - `label: string` (metric display name)
-    - `value: number | string` (metric value)
-    - `unit?: string` (optional unit appended to value)
-    - `color: string` (required background color for letter symbol)
-    - `footerIcon?: ReactNode` (optional icon in footer)
-    - `footerText?: string` (optional text in footer)
-  - [ ] Render root card container using custom div with Tailwind classes (flex-col, rounded corners, border)
-  - [ ] Build header section (Figma top frame):
+    - `label: string`
+    - `value: number | string`
+    - `unit?: string`
+    - `color: string`
+    - `footerIcon?: ReactNode`
+    - `footerText?: string`
+  - [ ] Render root card container using custom div with Tailwind classes
+  - [ ] Build header section:
     - [ ] Flex row, items-center, gap 12px, padding, with background color.
     - [ ] Render LetterSymbol component inside a 48×48px square with dynamic background color, rounded, and centered.
-  - [ ] Build content section (Figma mid-frame):
+  - [ ] Build content section:
     - [ ] Column layout with gap, integrated within header section.
     - [ ] Render `label` with ValueIndicator component using text-sm styling.
     - [ ] Render `value` with ValueIndicator component using text-xl styling, appending `unit` if provided.
-  - [ ] Build footer section (Figma bottom frame):
-    - [ ] Flex row, items-center, gap 4px, padding (8px 12px), rounded bottom corners, border top.
+  - [ ] Build footer section:
+    - [ ] Flex row, items-center, gap 4px, padding, rounded bottom corners, border top.
     - [ ] Render `footerIcon` and `footerText` styled with Urbanist 10px.
 - [ ] Update `index.ts` in the same directory to export `MetricSummaryCard`
-- [ ] Write unit tests in `src/modules/farm-performance/components/soil-data/__tests__/MetricSummaryCard.test.tsx` for: (Created comprehensive test suite with 10 test cases covering header rendering, optional props, edge cases, and snapshot tests)
-  - [ ] Header rendering (icon, label, value).
+- [ ] Write unit tests in `src/modules/farm-performance/components/soil-data/__tests__/MetricSummaryCard.test.tsx` for:
+  - [ ] Header rendering.
   - [ ] Optional `unit`, `footerIcon`, and `footerText` rendering.
   - [ ] Snapshot output with all props.
 ```
