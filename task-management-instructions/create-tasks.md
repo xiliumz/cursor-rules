@@ -60,6 +60,7 @@ module.exports = {
 };
 ```
 
+- Review documents in the `docs/` directory (e.g., architecture diagrams, API specifications, style guides) for broader project context that can enhance task clarity and alignment.
 - The more context you provide (both general and from codebase), the better the task will be.
 - After all context is gathered, create tasks under the `tasks/` directory.
 - Use the following format for task filenames: `task-<task-name>.md`.

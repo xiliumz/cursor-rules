@@ -1,0 +1,12 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+Refactor the provided code to improve its readability, maintainability, and adherence to best practices. Ensure that the functionality remains unchanged. Specifically:
+- Use clear and descriptive names for variables and functions.
+- Apply proper indentation and formatting.
+- Add comments or docstrings to explain the purpose of functions and complex sections of code.
+- Break down large or complex functions into smaller, more manageable ones.
+- Address any code smells or areas that could be simplified.
+After refactoring, provide a brief summary of the changes made and how they improve the code.
